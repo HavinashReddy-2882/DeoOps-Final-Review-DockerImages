@@ -32,7 +32,7 @@ jobs:
           context: ./SDP-Backend
           file: ./SDP-Backend/backend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/Final-Review-SDP-backend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/final-review-sdp-backend:latest
 
       # Step 5 — Build & Push Frontend Image
       - name: Build and Push Frontend Image
@@ -41,4 +41,4 @@ jobs:
           context: ./SDP-Frontend
           file: ./SDP-Frontend/frontend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/Final-Review-SDP-frontend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/final-review-sdp-frontend:latest
